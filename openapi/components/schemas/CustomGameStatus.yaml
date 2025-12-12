@@ -1,0 +1,16 @@
+type: object
+properties:
+  status:
+    type: string
+    enum:
+      - 'waiting'
+      - 'playing'
+      - 'finished'
+      - 'unknown'
+  playerCount:
+    type: integer
+    description: Number of players currently in the custom game
+  serverName:
+    type: string
+    description: Name of the server where the custom game is hosted
+

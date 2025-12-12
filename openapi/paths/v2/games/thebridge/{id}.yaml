@@ -1,0 +1,15 @@
+get:
+  tags:
+    - Games
+  summary: Get TheBridge game details by ID
+  parameters:
+    - $ref: '../../../../../openapi.yaml#/components/parameters/GameId'
+  responses:
+    200:
+      description: TheBridge game details
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../../openapi.yaml#/components/schemas/TheBridgeGame'
+    404:
+      $ref: '../../../../../openapi.yaml#/components/responses/ErrorGameNotFound'

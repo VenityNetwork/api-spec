@@ -1,0 +1,21 @@
+type: object
+properties:
+  gameId:
+    type: string
+    format: uuid
+  mode:
+    type: string
+  mapName:
+    type: string
+  duration:
+    type: integer
+    description: Duration of the game in seconds
+  finishedAt:
+    type: string
+    format: date-time
+  winnerTeam:
+    type: integer
+  custom:
+    type: boolean
+    description: Indicates if the game is a custom game
+

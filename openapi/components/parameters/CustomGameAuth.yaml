@@ -1,0 +1,8 @@
+name: X-Venity-Custom-Game-Key
+in: header
+required: true
+schema:
+  type: string
+  description: Custom game authentication key. You can request this key from the Venity Network Support at `#support` on `venitymc.com/discord`.
+  example: 'your-venity-custom-game-auth-key'
+

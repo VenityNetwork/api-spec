@@ -1,0 +1,73 @@
+name: type
+in: path
+required: true
+schema:
+  type: string
+  enum:
+    - game-bedwars-doubles-wins-daily
+    - game-bedwars-doubles-wins-lifetime
+    - game-bedwars-doubles-wins-monthly
+    - game-bedwars-doubles-wins-weekly
+    - game-bedwars-solo-wins-daily
+    - game-bedwars-solo-wins-lifetime
+    - game-bedwars-solo-wins-monthly
+    - game-bedwars-solo-wins-weekly
+    - game-bedwars-squads-wins-daily
+    - game-bedwars-squads-wins-lifetime
+    - game-bedwars-squads-wins-monthly
+    - game-bedwars-squads-wins-weekly
+    - game-bedwars-bedfight_solo-wins-daily
+    - game-bedwars-bedfight_solo-wins-lifetime
+    - game-bedwars-bedfight_solo-wins-weekly
+    - game-bedwars-bedfight_solo-wins-monthly
+    - game-bedwars-bedfight_doubles-wins-daily
+    - game-bedwars-bedfight_doubles-wins-lifetime
+    - game-bedwars-bedfight_doubles-wins-weekly
+    - game-bedwars-bedfight_doubles-wins-monthly
+    - game-bedwars-fireballfight_solo-wins-daily
+    - game-bedwars-fireballfight_solo-wins-lifetime
+    - game-bedwars-fireballfight_solo-wins-weekly
+    - game-bedwars-fireballfight_solo-wins-monthly
+    - game-bedwars-fireballfight_doubles-wins-daily
+    - game-bedwars-fireballfight_doubles-wins-lifetime
+    - game-bedwars-fireballfight_doubles-wins-weekly
+    - game-bedwars-fireballfight_doubles-wins-monthly
+    - game-crystalpvp-1v1-wins-daily
+    - game-crystalpvp-1v1-wins-lifetime
+    - game-crystalpvp-1v1-wins-monthly
+    - game-crystalpvp-1v1-wins-weekly
+    - game-crystalpvp-deathmatch-wins-daily
+    - game-crystalpvp-deathmatch-wins-lifetime
+    - game-crystalpvp-deathmatch-wins-monthly
+    - game-crystalpvp-deathmatch-wins-weekly
+    - game-duels-doubles-wins-daily
+    - game-duels-doubles-wins-lifetime
+    - game-duels-doubles-wins-monthly
+    - game-duels-doubles-wins-weekly
+    - game-duels-solo-wins-daily
+    - game-duels-solo-wins-lifetime
+    - game-duels-solo-wins-monthly
+    - game-duels-solo-wins-weekly
+    - game-skywars-doubles-wins-daily
+    - game-skywars-doubles-wins-lifetime
+    - game-skywars-doubles-wins-monthly
+    - game-skywars-doubles-wins-weekly
+    - game-skywars-solo-wins-daily
+    - game-skywars-solo-wins-lifetime
+    - game-skywars-solo-wins-monthly
+    - game-skywars-solo-wins-weekly
+    - game-thebridge-doubles-wins-daily
+    - game-thebridge-doubles-wins-lifetime
+    - game-thebridge-doubles-wins-monthly
+    - game-thebridge-doubles-wins-weekly
+    - game-thebridge-solo-wins-daily
+    - game-thebridge-solo-wins-lifetime
+    - game-thebridge-solo-wins-monthly
+    - game-thebridge-solo-wins-weekly
+    - game-thebridge-wins-daily
+    - game-thebridge-wins-lifetime
+    - game-thebridge-wins-monthly
+    - game-thebridge-wins-weekly
+    - player-experience
+    - player-playtime
+

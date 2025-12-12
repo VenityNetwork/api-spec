@@ -1,0 +1,13 @@
+get:
+  tags:
+    - Network
+  summary: Get information about all servers
+  responses:
+    200:
+      description: List of servers
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '../../../../openapi.yaml#/components/schemas/ServerInfo'

@@ -1,0 +1,7 @@
+type: object
+properties:
+  duels:
+    $ref: '../../../openapi.yaml#/components/schemas/CrystalPVPStats'
+  deathmatch:
+    $ref: '../../../openapi.yaml#/components/schemas/CrystalPVPStats'
+

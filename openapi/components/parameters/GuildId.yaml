@@ -1,0 +1,7 @@
+name: id
+in: path
+required: true
+description: You can find the guild ID in the `/v2/guild/search/:name` endpoint
+schema:
+  type: integer
+

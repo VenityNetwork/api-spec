@@ -1,0 +1,52 @@
+title: Player
+description: Player details
+type: object
+properties:
+  id:
+    type: integer
+    example: 123456
+  name:
+    type: string
+    example: 'John'
+  xuid:
+    type: string
+    example: '2535418117013099'
+  coins:
+    type: integer
+    example: 10000
+  discordId:
+    type: string
+    nullable: true
+    description: Discord ID of the player, if linked.
+    example: '587347873314635839'
+  crate:
+    type: integer
+  level:
+    type: integer
+    description: You may calculate the level based on experience
+    example: 123
+  experience:
+    type: integer
+    example: 7619001
+  rankName:
+    $ref: '../../../openapi.yaml#/components/schemas/PlayerRank'
+  guild:
+    $ref: '../../../openapi.yaml#/components/schemas/PlayerGuildInfo'
+  rankExpiresAt:
+    type: string
+    nullable: true
+    format: date-time
+    description: Rank expiration date, null if permanent
+  playTime:
+    type: integer
+    description: Play time in seconds
+    example: 1234567
+  createdAt:
+    type: string
+    format: date-time
+  lastSeen:
+    type: string
+    format: date-time
+  online:
+    $ref: '../../../openapi.yaml#/components/schemas/PlayerOnlineInfo'
+

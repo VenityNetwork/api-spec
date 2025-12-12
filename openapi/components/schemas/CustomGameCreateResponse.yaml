@@ -1,0 +1,10 @@
+type: object
+properties:
+  gameId:
+    type: string
+    format: uuid
+  code:
+    type: string
+    description: Unique code to join the custom game. To join the custom game, players can use the command `/custom join <code>` where `<code>` is the value of this field.
+    example: '238281'
+

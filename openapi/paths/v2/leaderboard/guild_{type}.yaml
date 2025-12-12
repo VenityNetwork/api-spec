@@ -1,0 +1,13 @@
+get:
+  tags:
+    - Leaderboard
+  summary: Get guild leaderboard entries by type
+  parameters:
+    - $ref: '../../../../openapi.yaml#/components/parameters/GuildLeaderboardType'
+  responses:
+    200:
+      description: Leaderboard entries
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../openapi.yaml#/components/schemas/GuildLeaderboardEntries'

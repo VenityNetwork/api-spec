@@ -1,0 +1,35 @@
+type: object
+properties:
+  gameType:
+    $ref: '../../../openapi.yaml#/components/schemas/GameType'
+  allowedPlayerIds:
+    type: array
+    nullable: true
+    items:
+      type: integer
+    description: List of player IDs allowed to join the custom game. If null/empty, the game will be public and anyone can join.
+    example: [ 123456, 789012 ]
+  playerTeamMapping:
+    type: object
+    additionalProperties:
+      type: integer
+    description: Mapping of player IDs to team IDs. If not provided, players will be assigned to teams automatically. -1 means the player is assigned as spectator. The team ID is starting from 0. For example, in BedWars, 0 = Red, 1 = Blue, 2 = Green, 3 = Yellow, etc.
+    example: { "123456": 1, "789012": 2 }
+  startWhenAllowedPlayersJoined:
+    type: boolean
+    description: If true, the game will start automatically when all allowed players have joined. If false, the game will wait for the `/v2/custom-game/{id}/start` endpoint called.
+    default: false
+  timeout:
+    type: integer
+    description: If the game is not started within this time (in seconds), it will be automatically cancelled.
+    default: 600
+    minimum: 60
+    maximum: 600
+  region:
+    type: string
+    description: The region where the custom game will be hosted.
+    default: 'as'
+    enum:
+      - 'na'
+      - 'as'
+

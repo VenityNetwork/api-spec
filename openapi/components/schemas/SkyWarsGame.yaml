@@ -1,0 +1,9 @@
+type: object
+properties:
+  header:
+    $ref: '../../../openapi.yaml#/components/schemas/GameHeader'
+  participants:
+    type: array
+    items:
+      $ref: '../../../openapi.yaml#/components/schemas/SkyWarsGameParticipant'
+

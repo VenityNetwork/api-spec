@@ -1,0 +1,11 @@
+get:
+  tags:
+    - Network
+  summary: Get global network information
+  responses:
+    200:
+      description: Global network information
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../openapi.yaml#/components/schemas/NetworkInfo'

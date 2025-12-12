@@ -1,0 +1,11 @@
+type: object
+properties:
+  name:
+    type: string
+    description: The name of the server
+    example: 'BedWars-Solo-1'
+  playerCount:
+    type: integer
+    description: The number of players currently on the server
+    example: 50
+

@@ -1,0 +1,19 @@
+get:
+  tags:
+    - Legacy API
+  summary: Get player avatar by name
+  parameters:
+    - name: name
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    200:
+      description: Player avatar image
+      content:
+        image/png:
+          schema:
+            type: string
+            format: binary
+

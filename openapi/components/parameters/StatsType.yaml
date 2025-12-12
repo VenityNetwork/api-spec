@@ -1,0 +1,11 @@
+name: type
+in: query
+schema:
+  type: string
+  default: 'lifetime'
+  enum:
+    - 'lifetime'
+    - 'daily'
+    - 'weekly'
+    - 'monthly'
+

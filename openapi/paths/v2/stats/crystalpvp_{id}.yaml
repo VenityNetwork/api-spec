@@ -1,0 +1,18 @@
+get:
+  tags:
+    - Game Stats
+  summary: Get CrystalPVP stats for a player by ID
+  parameters:
+    - $ref: '../../../../openapi.yaml#/components/parameters/PlayerId'
+    - $ref: '../../../../openapi.yaml#/components/parameters/StatsType'
+  responses:
+    200:
+      description: CrystalPVP stats for the player
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../../../../openapi.yaml#/components/schemas/BaseStats'
+              - $ref: '../../../../openapi.yaml#/components/schemas/GroupedCrystalPVPStats'
+    404:
+      $ref: '../../../../openapi.yaml#/components/responses/ErrorPlayerNotFound'

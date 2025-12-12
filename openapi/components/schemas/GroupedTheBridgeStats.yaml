@@ -1,0 +1,7 @@
+type: object
+properties:
+  solo:
+    $ref: '../../../openapi.yaml#/components/schemas/TheBridgeStats'
+  doubles:
+    $ref: '../../../openapi.yaml#/components/schemas/TheBridgeStats'
+

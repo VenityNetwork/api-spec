@@ -1,0 +1,13 @@
+get:
+  tags:
+    - Leaderboard
+  summary: Get player leaderboard entries by type
+  parameters:
+    - $ref: '../../../../openapi.yaml#/components/parameters/PlayerLeaderboardType'
+  responses:
+    200:
+      description: Leaderboard entries
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../openapi.yaml#/components/schemas/PlayerLeaderboardEntries'

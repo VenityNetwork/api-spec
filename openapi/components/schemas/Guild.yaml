@@ -1,0 +1,29 @@
+title: Guild
+type: object
+properties:
+  id:
+    type: integer
+    example: 123456
+  name:
+    type: string
+    example: 'BebekSquad'
+  tag:
+    type: string
+    example: 'TAG'
+  level:
+    type: integer
+    example: 5
+  experience:
+    type: integer
+    example: 15000
+  maxMembers:
+    type: integer
+    example: 20
+  members:
+    type: array
+    items:
+      $ref: '../../../openapi.yaml#/components/schemas/GuildMember'
+  createdAt:
+    type: string
+    format: date-time
+

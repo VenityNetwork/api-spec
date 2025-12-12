@@ -1,0 +1,20 @@
+get:
+  tags:
+    - Custom Game
+  summary: Get the status of a custom game by ID
+  parameters:
+    - $ref: '../../../../openapi.yaml#/components/parameters/CustomGameAuth'
+    - name: id
+      in: path
+      required: true
+      description: Custom game ID to get status for
+      schema:
+        type: string
+        format: uuid
+  responses:
+    200:
+      description: Custom game status
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../openapi.yaml#/components/schemas/CustomGameStatus'

@@ -1,0 +1,8 @@
+type: object
+properties:
+  resetAt:
+    type: string
+    format: date-time
+    nullable: true
+    description: Upcoming reset date for the stats, null if no reset is scheduled (e.g., for lifetime stats)
+

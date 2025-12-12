@@ -1,0 +1,15 @@
+get:
+  tags:
+    - Games
+  summary: Get Duels game details by ID
+  parameters:
+    - $ref: '../../../../../openapi.yaml#/components/parameters/GameId'
+  responses:
+    200:
+      description: Duels game details
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../../openapi.yaml#/components/schemas/DuelsGame'
+    404:
+      $ref: '../../../../../openapi.yaml#/components/responses/ErrorGameNotFound'

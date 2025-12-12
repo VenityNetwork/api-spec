@@ -1,0 +1,17 @@
+type: object
+nullable: true
+description: Value is null if the player is not online
+properties:
+  server:
+    type: string
+    description: The server the player is currently on
+    example: 'BedWars-Solo-1'
+  proxy:
+    type: string
+    description: The proxy the player is currently connected to
+    example: 'Proxy-AP-1'
+  ping:
+    type: integer
+    description: Player's ping in milliseconds
+    example: 50
+

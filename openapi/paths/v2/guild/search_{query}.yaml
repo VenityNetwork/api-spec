@@ -1,0 +1,47 @@
+get:
+  tags:
+    - Guild
+  summary: Search for a guild by name or prefix
+  parameters:
+    - name: query
+      in: path
+      required: true
+      description: Guild name to search for
+      schema:
+        type: string
+        example: 'BebekSquad'
+    - name: prefixSearch
+      in: query
+      description: If true, the search will return guilds whose names start with the given name
+      schema:
+        type: boolean
+        default: false
+    - name: searchBy
+      in: query
+      description: Search by guild name or tag
+      schema:
+        type: string
+        default: 'tagAndName'
+        enum:
+          - 'name'
+          - 'tag'
+          - 'tagAndName'
+    - name: limit
+      in: query
+      description: Maximum number of guilds to return (maximum is 100)
+      schema:
+        type: integer
+        minimum: 1
+        default: 10
+        maximum: 100
+  responses:
+    200:
+      description: Guild search results
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '../../../../openapi.yaml#/components/schemas/SearchGuildResult'
+    404:
+      $ref: '../../../../openapi.yaml#/components/responses/ErrorGuildNotFound'

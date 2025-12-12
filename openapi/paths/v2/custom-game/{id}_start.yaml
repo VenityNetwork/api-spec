@@ -1,0 +1,22 @@
+post:
+  tags:
+    - Custom Game
+  summary: Start a custom game by ID
+  parameters:
+    - $ref: '../../../../openapi.yaml#/components/parameters/CustomGameAuth'
+    - name: id
+      in: path
+      required: true
+      description: Custom game ID to start
+      schema:
+        type: string
+        format: uuid
+  responses:
+    200:
+      description: Custom game started successfully
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../openapi.yaml#/components/schemas/CustomGameStartResponse'
+    404:
+      $ref: '../../../../openapi.yaml#/components/responses/ErrorGameNotFound'

@@ -1,0 +1,8 @@
+name: id
+in: path
+required: true
+description: Game ID to retrieve details for
+schema:
+  type: string
+  format: uuid
+

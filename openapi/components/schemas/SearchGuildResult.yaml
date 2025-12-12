@@ -1,0 +1,10 @@
+title: Search Guild Result
+type: object
+properties:
+  id:
+    type: integer
+  name:
+    type: string
+  tag:
+    type: string
+

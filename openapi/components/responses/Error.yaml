@@ -1,0 +1,6 @@
+description: Invalid Request. See `message` field for details.
+content:
+  application/json:
+    schema:
+      $ref: '../../../openapi.yaml#/components/schemas/Error'
+

@@ -1,0 +1,15 @@
+get:
+  tags:
+    - Guild
+  summary: Get guild information by ID
+  parameters:
+    - $ref: '../../../../openapi.yaml#/components/parameters/GuildId'
+  responses:
+    200:
+      description: Guild Info
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../openapi.yaml#/components/schemas/Guild'
+    404:
+      $ref: '../../../../openapi.yaml#/components/responses/ErrorGuildNotFound'

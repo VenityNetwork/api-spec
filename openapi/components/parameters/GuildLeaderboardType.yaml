@@ -1,0 +1,8 @@
+name: type
+in: path
+required: true
+schema:
+  type: string
+  enum:
+    - guild-experience
+

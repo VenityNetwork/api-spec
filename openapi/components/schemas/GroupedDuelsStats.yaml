@@ -1,0 +1,7 @@
+type: object
+properties:
+  solo:
+    $ref: '../../../openapi.yaml#/components/schemas/DuelsStats'
+  doubles:
+    $ref: '../../../openapi.yaml#/components/schemas/DuelsStats'
+

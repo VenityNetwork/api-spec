@@ -1,0 +1,17 @@
+type: object
+properties:
+  matches:
+    type: integer
+  wins:
+    type: integer
+  kills:
+    type: integer
+  deaths:
+    type: integer
+  bedsBroken:
+    type: integer
+  finalKills:
+    type: integer
+  finalDeaths:
+    type: integer
+

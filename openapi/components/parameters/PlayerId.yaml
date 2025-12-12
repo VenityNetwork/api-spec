@@ -1,0 +1,7 @@
+name: id
+in: path
+required: true
+description: You can find the player ID in the `/v2/player/search/:name` endpoint
+schema:
+  type: integer
+

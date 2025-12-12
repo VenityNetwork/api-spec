@@ -1,0 +1,13 @@
+type: object
+properties:
+  playerId:
+    type: integer
+  playerName:
+    type: string
+    example: 'John'
+  team:
+    type: integer
+  playTime:
+    type: integer
+    description: Play time in seconds
+

@@ -1,0 +1,18 @@
+type: string
+enum:
+  - 'BedWars-Solo'
+  - 'BedWars-Doubles'
+  - 'BedWars-Squads'
+  - 'SkyWars-Solo'
+  - 'SkyWars-Doubles'
+  - 'Duels-Solo'
+  - 'Duels-Doubles'
+  - 'TheBridge-Solo'
+  - 'TheBridge-Doubles'
+  - 'CrystalPVP-1v1'
+  - 'CrystalPVP-Deathmatch'
+  - 'BedWars-BedFightSolo'
+  - 'BedWars-BedFightDoubles'
+  - 'BedWars-FireballFightSolo'
+  - 'BedWars-FireballFightDoubles'
+

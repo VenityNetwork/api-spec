@@ -1,0 +1,16 @@
+title: Player Guild Info
+description: Player guild information that appears in the /player/:id endpoint
+type: object
+nullable: true
+properties:
+  id:
+    type: integer
+  name:
+    type: string
+    example: 'BebekSquad'
+  tag:
+    type: string
+    example: 'TAG'
+  role:
+    $ref: '../../../openapi.yaml#/components/schemas/GuildMemberRole'
+

@@ -1,0 +1,24 @@
+title: Item
+type: object
+properties:
+  type:
+    type: string
+    enum:
+      - 'wings'
+      - 'cape'
+      - 'skywars-cage'
+      - 'trails'
+      - 'projectile-trails'
+      - 'particles'
+      - 'kill-effect'
+      - 'win-effect'
+      - 'bedwars-shop-keeper'
+      - 'bedwars-upgrade-shop-keeper'
+      - 'wings-particle'
+      - 'bedwars-bed-break-effect'
+      - 'bedwars-wood-skin'
+      - 'skywars-kits'
+      - 'skywars-perks'
+  name:
+    type: string
+

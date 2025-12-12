@@ -1,0 +1,16 @@
+type: object
+properties:
+  lastUpdatedAt:
+    type: string
+    format: date-time
+    description: Last time the leaderboard was updated
+  resetAt:
+    type: string
+    format: date-time
+    nullable: true
+    description: Upcoming reset date for the leaderboard, null if no reset is scheduled
+  entries:
+    type: array
+    items:
+      $ref: '../../../openapi.yaml#/components/schemas/PlayerLeaderboardEntry'
+

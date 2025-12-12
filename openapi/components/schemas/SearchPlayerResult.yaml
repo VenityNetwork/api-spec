@@ -1,0 +1,8 @@
+title: Search Player Result
+type: object
+properties:
+  id:
+    type: integer
+  name:
+    type: string
+

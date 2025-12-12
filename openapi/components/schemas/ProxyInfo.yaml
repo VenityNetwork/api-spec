@@ -1,0 +1,11 @@
+type: object
+properties:
+  name:
+    type: string
+    description: The name of the proxy server
+    example: 'Proxy-AP-1'
+  playerCount:
+    type: integer
+    description: The number of players currently connected to the proxy
+    example: 250
+

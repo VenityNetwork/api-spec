@@ -1,0 +1,15 @@
+get:
+  tags:
+    - Games
+  summary: Get BedWars game details by ID
+  parameters:
+    - $ref: '../../../../../openapi.yaml#/components/parameters/GameId'
+  responses:
+    200:
+      description: BedWars game details
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../../openapi.yaml#/components/schemas/BedWarsGame'
+    404:
+      $ref: '../../../../../openapi.yaml#/components/responses/ErrorGameNotFound'

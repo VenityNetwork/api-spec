@@ -1,0 +1,14 @@
+type: string
+enum:
+  - 'default'
+  - 'voter'
+  - 'vip'
+  - 'vipp'
+  - 'mvp'
+  - 'mvpp'
+  - 'mvppp'
+  - 'youtube'
+  - 'staff'
+  - 'admin'
+  - 'owner'
+

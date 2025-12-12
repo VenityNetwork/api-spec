@@ -1,0 +1,35 @@
+get:
+  tags:
+    - Player
+  summary: Search for a player by name or prefix
+  parameters:
+    - name: name
+      in: path
+      required: true
+      description: Player name to search for
+      schema:
+        type: string
+        example: 'John'
+    - name: prefixSearch
+      in: query
+      description: If true, the search will return players whose names start with the given name
+      schema:
+        type: boolean
+        default: false
+    - name: limit
+      in: query
+      description: Maximum number of players to return (maximum is 100)
+      schema:
+        type: integer
+        minimum: 1
+        default: 10
+        maximum: 100
+  responses:
+    200:
+      description: Player search results
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '../../../../openapi.yaml#/components/schemas/SearchPlayerResult'

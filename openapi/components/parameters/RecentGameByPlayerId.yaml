@@ -1,0 +1,7 @@
+name: playerId
+in: query
+description: You can find the player ID in the `/v2/player/search/:name` endpoint
+required: false
+schema:
+  type: integer
+

@@ -1,0 +1,7 @@
+description: Role of a guild member
+type: string
+enum:
+  - 'leader'
+  - 'officer'
+  - 'member'
+

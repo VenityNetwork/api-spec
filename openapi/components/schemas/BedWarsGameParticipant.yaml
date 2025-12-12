@@ -1,0 +1,23 @@
+type: object
+properties:
+  header:
+    $ref: '../../../openapi.yaml#/components/schemas/GameParticipantHeader'
+  kills:
+    type: integer
+  finalKills:
+    type: integer
+  deaths:
+    type: integer
+  finalDeaths:
+    type: integer
+  bedsBroken:
+    type: integer
+  emeraldsCollected:
+    type: integer
+  diamondsCollected:
+    type: integer
+  ironCollected:
+    type: integer
+  goldCollected:
+    type: integer
+

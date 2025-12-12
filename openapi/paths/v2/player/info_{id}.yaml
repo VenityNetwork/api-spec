@@ -1,0 +1,15 @@
+get:
+  tags:
+    - Player
+  summary: Get player information by ID
+  parameters:
+    - $ref: '../../../../openapi.yaml#/components/parameters/PlayerId'
+  responses:
+    200:
+      description: Player Info
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../openapi.yaml#/components/schemas/Player'
+    404:
+      $ref: '../../../../openapi.yaml#/components/responses/ErrorPlayerNotFound'

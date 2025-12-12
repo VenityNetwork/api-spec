@@ -1,0 +1,11 @@
+type: object
+properties:
+  onlinePlayers:
+    type: integer
+    description: Total number of players online across the network
+    example: 250
+  dailyUniquePlayers:
+    type: integer
+    description: Number of unique players who played today
+    example: 5000
+

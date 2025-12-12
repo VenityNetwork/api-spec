@@ -1,0 +1,11 @@
+type: object
+properties:
+  rank:
+    type: integer
+  playerId:
+    type: integer
+  playerName:
+    type: string
+  score:
+    type: integer
+

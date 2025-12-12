@@ -1,0 +1,199 @@
+openapi: 3.0.3
+info:
+  title: Venity Network API
+  description: "Rate Limit: 20 requests/second"
+  version: 2.0.0
+servers:
+  - url: 'https://api.venitymc.com'
+
+components:
+  securitySchemes:
+    BasicAuth:
+      $ref: './openapi/components/securitySchemes/BasicAuth.yaml'
+  parameters:
+    GameId:
+      $ref: './openapi/components/parameters/GameId.yaml'
+    RecentGameByPlayerId:
+      $ref: './openapi/components/parameters/RecentGameByPlayerId.yaml'
+    RecentGameAfter:
+      $ref: './openapi/components/parameters/RecentGameAfter.yaml'
+    RecentGameLimit:
+      $ref: './openapi/components/parameters/RecentGameLimit.yaml'
+    RecentGameBefore:
+      $ref: './openapi/components/parameters/RecentGameBefore.yaml'
+    GuildId:
+      $ref: './openapi/components/parameters/GuildId.yaml'
+    PlayerId:
+      $ref: './openapi/components/parameters/PlayerId.yaml'
+    StatsType:
+      $ref: './openapi/components/parameters/StatsType.yaml'
+    PlayerLeaderboardType:
+      $ref: './openapi/components/parameters/PlayerLeaderboardType.yaml'
+    GuildLeaderboardType:
+      $ref: './openapi/components/parameters/GuildLeaderboardType.yaml'
+    CustomGameAuth:
+      $ref: './openapi/components/parameters/CustomGameAuth.yaml'
+  responses:
+    ErrorPlayerNotFound:
+      $ref: './openapi/components/responses/ErrorPlayerNotFound.yaml'
+    ErrorGuildNotFound:
+      $ref: './openapi/components/responses/ErrorGuildNotFound.yaml'
+    ErrorGameNotFound:
+      $ref: './openapi/components/responses/ErrorGameNotFound.yaml'
+    Error:
+      $ref: './openapi/components/responses/Error.yaml'
+  schemas:
+    Error:
+      $ref: './openapi/components/schemas/Error.yaml'
+    Player:
+      $ref: './openapi/components/schemas/Player.yaml'
+    PlayerGuildInfo:
+      $ref: './openapi/components/schemas/PlayerGuildInfo.yaml'
+    PlayerRank:
+      $ref: './openapi/components/schemas/PlayerRank.yaml'
+    Item:
+      $ref: './openapi/components/schemas/Item.yaml'
+    Guild:
+      $ref: './openapi/components/schemas/Guild.yaml'
+    GuildMemberRole:
+      $ref: './openapi/components/schemas/GuildMemberRole.yaml'
+    GuildMember:
+      $ref: './openapi/components/schemas/GuildMember.yaml'
+    SearchPlayerResult:
+      $ref: './openapi/components/schemas/SearchPlayerResult.yaml'
+    PlayerOnlineInfo:
+      $ref: './openapi/components/schemas/PlayerOnlineInfo.yaml'
+    BaseStats:
+      $ref: './openapi/components/schemas/BaseStats.yaml'
+    GroupedBedWarsStats:
+      $ref: './openapi/components/schemas/GroupedBedWarsStats.yaml'
+    BedWarsStats:
+      $ref: './openapi/components/schemas/BedWarsStats.yaml'
+    GroupedSkyWarsStats:
+      $ref: './openapi/components/schemas/GroupedSkyWarsStats.yaml'
+    SkyWarsStats:
+      $ref: './openapi/components/schemas/SkyWarsStats.yaml'
+    GroupedDuelsStats:
+      $ref: './openapi/components/schemas/GroupedDuelsStats.yaml'
+    DuelsStats:
+      $ref: './openapi/components/schemas/DuelsStats.yaml'
+    GroupedTheBridgeStats:
+      $ref: './openapi/components/schemas/GroupedTheBridgeStats.yaml'
+    TheBridgeStats:
+      $ref: './openapi/components/schemas/TheBridgeStats.yaml'
+    GroupedCrystalPVPStats:
+      $ref: './openapi/components/schemas/GroupedCrystalPVPStats.yaml'
+    CrystalPVPStats:
+      $ref: './openapi/components/schemas/CrystalPVPStats.yaml'
+    SearchGuildResult:
+      $ref: './openapi/components/schemas/SearchGuildResult.yaml'
+    ServerInfo:
+      $ref: './openapi/components/schemas/ServerInfo.yaml'
+    ProxyInfo:
+      $ref: './openapi/components/schemas/ProxyInfo.yaml'
+    NetworkInfo:
+      $ref: './openapi/components/schemas/NetworkInfo.yaml'
+    PlayerLeaderboardEntries:
+      $ref: './openapi/components/schemas/PlayerLeaderboardEntries.yaml'
+    PlayerLeaderboardEntry:
+      $ref: './openapi/components/schemas/PlayerLeaderboardEntry.yaml'
+    GuildLeaderboardEntries:
+      $ref: './openapi/components/schemas/GuildLeaderboardEntries.yaml'
+    GuildLeaderboardEntry:
+      $ref: './openapi/components/schemas/GuildLeaderboardEntry.yaml'
+    GameType:
+      $ref: './openapi/components/schemas/GameType.yaml'
+    CustomGameCreateRequest:
+      $ref: './openapi/components/schemas/CustomGameCreateRequest.yaml'
+    CustomGameCreateResponse:
+      $ref: './openapi/components/schemas/CustomGameCreateResponse.yaml'
+    CustomGameStartResponse:
+      $ref: './openapi/components/schemas/CustomGameStartResponse.yaml'
+    CustomGameStatus:
+      $ref: './openapi/components/schemas/CustomGameStatus.yaml'
+    GameParticipantHeader:
+      $ref: './openapi/components/schemas/GameParticipantHeader.yaml'
+    GameHeader:
+      $ref: './openapi/components/schemas/GameHeader.yaml'
+    BedWarsGameParticipant:
+      $ref: './openapi/components/schemas/BedWarsGameParticipant.yaml'
+    BedWarsGame:
+      $ref: './openapi/components/schemas/BedWarsGame.yaml'
+    SkyWarsGameParticipant:
+      $ref: './openapi/components/schemas/SkyWarsGameParticipant.yaml'
+    SkyWarsGame:
+      $ref: './openapi/components/schemas/SkyWarsGame.yaml'
+    CrystalPVPGameParticipant:
+      $ref: './openapi/components/schemas/CrystalPVPGameParticipant.yaml'
+    CrystalPVPGame:
+      $ref: './openapi/components/schemas/CrystalPVPGame.yaml'
+    DuelsGameParticipant:
+      $ref: './openapi/components/schemas/DuelsGameParticipant.yaml'
+    DuelsGame:
+      $ref: './openapi/components/schemas/DuelsGame.yaml'
+    TheBridgeGameParticipant:
+      $ref: './openapi/components/schemas/TheBridgeGameParticipant.yaml'
+    TheBridgeGame:
+      $ref: './openapi/components/schemas/TheBridgeGame.yaml'
+
+paths:
+  /v2/player/search/{name}:
+    $ref: './openapi/paths/v2/player/search_{name}.yaml'
+  /v2/player/info/{id}:
+    $ref: './openapi/paths/v2/player/info_{id}.yaml'
+  /v2/player/items/{id}:
+    $ref: './openapi/paths/v2/player/items_{id}.yaml'
+  /v2/stats/bedwars/{id}:
+    $ref: './openapi/paths/v2/stats/bedwars_{id}.yaml'
+  /v2/stats/skywars/{id}:
+    $ref: './openapi/paths/v2/stats/skywars_{id}.yaml'
+  /v2/stats/thebridge/{id}:
+    $ref: './openapi/paths/v2/stats/thebridge_{id}.yaml'
+  /v2/stats/duels/{id}:
+    $ref: './openapi/paths/v2/stats/duels_{id}.yaml'
+  /v2/stats/crystalpvp/{id}:
+    $ref: './openapi/paths/v2/stats/crystalpvp_{id}.yaml'
+  /v2/guild/search/{query}:
+    $ref: './openapi/paths/v2/guild/search_{query}.yaml'
+  /v2/guild/info/{id}:
+    $ref: './openapi/paths/v2/guild/info_{id}.yaml'
+  /v2/network/servers:
+    $ref: './openapi/paths/v2/network/servers.yaml'
+  /v2/network/proxies:
+    $ref: './openapi/paths/v2/network/proxies.yaml'
+  /v2/network/global:
+    $ref: './openapi/paths/v2/network/global.yaml'
+  /v2/leaderboard/player/{type}:
+    $ref: './openapi/paths/v2/leaderboard/player_{type}.yaml'
+  /v2/leaderboard/guild/{type}:
+    $ref: './openapi/paths/v2/leaderboard/guild_{type}.yaml'
+  /v2/custom-game/create:
+    $ref: './openapi/paths/v2/custom-game/create.yaml'
+  /v2/custom-game/{id}/start:
+    $ref: './openapi/paths/v2/custom-game/{id}_start.yaml'
+  /v2/custom-game/{id}/status:
+    $ref: './openapi/paths/v2/custom-game/{id}_status.yaml'
+  /v2/games/bedwars/recent:
+    $ref: './openapi/paths/v2/games/bedwars/recent.yaml'
+  /v2/games/bedwars/{id}:
+    $ref: './openapi/paths/v2/games/bedwars/{id}.yaml'
+  /v2/games/skywars/recent:
+    $ref: './openapi/paths/v2/games/skywars/recent.yaml'
+  /v2/games/skywars/{id}:
+    $ref: './openapi/paths/v2/games/skywars/{id}.yaml'
+  /v2/games/crystalpvp/recent:
+    $ref: './openapi/paths/v2/games/crystalpvp/recent.yaml'
+  /v2/games/crystalpvp/{id}:
+    $ref: './openapi/paths/v2/games/crystalpvp/{id}.yaml'
+  /v2/games/duels/recent:
+    $ref: './openapi/paths/v2/games/duels/recent.yaml'
+  /v2/games/duels/{id}:
+    $ref: './openapi/paths/v2/games/duels/{id}.yaml'
+  /v2/games/thebridge/recent:
+    $ref: './openapi/paths/v2/games/thebridge/recent.yaml'
+  /v2/games/thebridge/{id}:
+    $ref: './openapi/paths/v2/games/thebridge/{id}.yaml'
+  /player/{name}/avatar.png:
+    $ref: './openapi/paths/player/{name}_avatar.png.yaml'
+  /player/{name}/skin.png:
+    $ref: './openapi/paths/player/{name}_skin.png.yaml'

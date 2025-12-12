@@ -1,0 +1,21 @@
+post:
+  tags:
+    - Custom Game
+  summary: Create a custom game
+  parameters:
+    - $ref: '../../../../openapi.yaml#/components/parameters/CustomGameAuth'
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../../../openapi.yaml#/components/schemas/CustomGameCreateRequest'
+  responses:
+    200:
+      description: Custom game created successfully
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../openapi.yaml#/components/schemas/CustomGameCreateResponse'
+    400:
+      $ref: '../../../../openapi.yaml#/components/responses/Error'

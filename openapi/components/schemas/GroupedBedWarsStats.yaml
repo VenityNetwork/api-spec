@@ -1,0 +1,25 @@
+type: object
+properties:
+  solo:
+    $ref: '../../../openapi.yaml#/components/schemas/BedWarsStats'
+  doubles:
+    $ref: '../../../openapi.yaml#/components/schemas/BedWarsStats'
+  squads:
+    $ref: '../../../openapi.yaml#/components/schemas/BedWarsStats'
+  bedfightSolo:
+    $ref: '../../../openapi.yaml#/components/schemas/BedWarsStats'
+  bedfightDoubles:
+    $ref: '../../../openapi.yaml#/components/schemas/BedWarsStats'
+  fireballfightSolo:
+    $ref: '../../../openapi.yaml#/components/schemas/BedWarsStats'
+  fireballfightDoubles:
+    $ref: '../../../openapi.yaml#/components/schemas/BedWarsStats'
+  ironCollected:
+    type: integer
+  goldCollected:
+    type: integer
+  diamondsCollected:
+    type: integer
+  emeraldsCollected:
+    type: integer
+

@@ -1,0 +1,14 @@
+title: Guild Member
+type: object
+properties:
+  playerId:
+    type: integer
+  playerName:
+    type: string
+    example: 'John'
+  role:
+    $ref: '../../../openapi.yaml#/components/schemas/GuildMemberRole'
+  joinedAt:
+    type: string
+    format: date-time
+

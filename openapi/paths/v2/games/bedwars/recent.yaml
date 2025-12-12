@@ -1,0 +1,18 @@
+get:
+  tags:
+    - Games
+  summary: Get recent BedWars games
+  parameters:
+    - $ref: '../../../../../openapi.yaml#/components/parameters/RecentGameByPlayerId'
+    - $ref: '../../../../../openapi.yaml#/components/parameters/RecentGameAfter'
+    - $ref: '../../../../../openapi.yaml#/components/parameters/RecentGameBefore'
+    - $ref: '../../../../../openapi.yaml#/components/parameters/RecentGameLimit'
+  responses:
+    200:
+      description: List of recent BedWars games
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '../../../../../openapi.yaml#/components/schemas/BedWarsGame'

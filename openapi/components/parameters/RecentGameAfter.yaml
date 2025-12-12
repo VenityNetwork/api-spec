@@ -1,0 +1,8 @@
+name: after
+in: query
+description: Timestamp in ISO 8601 format to filter games after this time.
+required: false
+schema:
+  type: string
+  format: date-time
+
