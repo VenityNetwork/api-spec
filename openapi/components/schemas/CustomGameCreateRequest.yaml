@@ -32,4 +32,9 @@ properties:
     enum:
       - 'na'
       - 'as'
+  mapName:
+    type: string
+    description: Map name to be used for the custom game. If not provided or invalid, a random map will be selected.
+    nullable: true
+    example: 'SideCity'
 
