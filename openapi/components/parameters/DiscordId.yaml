@@ -1,0 +1,7 @@
+name: id
+in: path
+required: true
+description: Discord ID of the player
+schema:
+  type: string
+  example: '587347873314635839'

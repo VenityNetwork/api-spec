@@ -25,6 +25,8 @@ components:
       $ref: './openapi/components/parameters/GuildId.yaml'
     PlayerId:
       $ref: './openapi/components/parameters/PlayerId.yaml'
+    DiscordId:
+      $ref: './openapi/components/parameters/DiscordId.yaml'
     StatsType:
       $ref: './openapi/components/parameters/StatsType.yaml'
     PlayerLeaderboardType:
@@ -141,6 +143,8 @@ paths:
     $ref: './openapi/paths/v2/player/search_{name}.yaml'
   /v2/player/info/{id}:
     $ref: './openapi/paths/v2/player/info_{id}.yaml'
+  /v2/player/info-by-discord/{id}:
+    $ref: './openapi/paths/v2/player/info-by-discord_{id}.yaml'
   /v2/player/items/{id}:
     $ref: './openapi/paths/v2/player/items_{id}.yaml'
   /v2/stats/bedwars/{id}:
