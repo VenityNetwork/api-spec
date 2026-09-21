@@ -1,0 +1,12 @@
+type: object
+properties:
+  matches:
+    type: integer
+  wins:
+    type: integer
+  catches:
+    type: integer
+  deaths:
+    type: integer
+  points:
+    type: integer

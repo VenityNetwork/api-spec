@@ -87,6 +87,10 @@ components:
       $ref: './openapi/components/schemas/GroupedCrystalPVPStats.yaml'
     CrystalPVPStats:
       $ref: './openapi/components/schemas/CrystalPVPStats.yaml'
+    GroupedHideAndSeekStats:
+      $ref: './openapi/components/schemas/GroupedHideAndSeekStats.yaml'
+    HideAndSeekStats:
+      $ref: './openapi/components/schemas/HideAndSeekStats.yaml'
     SearchGuildResult:
       $ref: './openapi/components/schemas/SearchGuildResult.yaml'
     ServerInfo:
@@ -137,6 +141,10 @@ components:
       $ref: './openapi/components/schemas/TheBridgeGameParticipant.yaml'
     TheBridgeGame:
       $ref: './openapi/components/schemas/TheBridgeGame.yaml'
+    HideAndSeekGameParticipant:
+      $ref: './openapi/components/schemas/HideAndSeekGameParticipant.yaml'
+    HideAndSeekGame:
+      $ref: './openapi/components/schemas/HideAndSeekGame.yaml'
 
 paths:
   /v2/player/search/{name}:
@@ -157,6 +165,8 @@ paths:
     $ref: './openapi/paths/v2/stats/duels_{id}.yaml'
   /v2/stats/crystalpvp/{id}:
     $ref: './openapi/paths/v2/stats/crystalpvp_{id}.yaml'
+  /v2/stats/hns/{id}:
+    $ref: './openapi/paths/v2/stats/hns_{id}.yaml'
   /v2/guild/search/{query}:
     $ref: './openapi/paths/v2/guild/search_{query}.yaml'
   /v2/guild/info/{id}:
@@ -197,6 +207,10 @@ paths:
     $ref: './openapi/paths/v2/games/thebridge/recent.yaml'
   /v2/games/thebridge/{id}:
     $ref: './openapi/paths/v2/games/thebridge/{id}.yaml'
+  /v2/games/hns/recent:
+    $ref: './openapi/paths/v2/games/hns/recent.yaml'
+  /v2/games/hns/{id}:
+    $ref: './openapi/paths/v2/games/hns/{id}.yaml'
   /player/{name}/avatar.png:
     $ref: './openapi/paths/player/{name}_avatar.png.yaml'
   /player/{name}/skin.png:

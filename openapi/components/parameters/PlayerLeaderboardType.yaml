@@ -68,6 +68,9 @@ schema:
     - game-thebridge-wins-lifetime
     - game-thebridge-wins-monthly
     - game-thebridge-wins-weekly
+    - game-hns-classic-points-daily
+    - game-hns-classic-points-lifetime
+    - game-hns-classic-points-monthly
+    - game-hns-classic-points-weekly
     - player-experience
     - player-playtime
-

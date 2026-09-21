@@ -1,0 +1,15 @@
+get:
+  tags:
+    - Games
+  summary: Get Hide and Seek game details by ID
+  parameters:
+    - $ref: '../../../../../openapi.yaml#/components/parameters/GameId'
+  responses:
+    200:
+      description: Hide and Seek game details
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../../openapi.yaml#/components/schemas/HideAndSeekGame'
+    404:
+      $ref: '../../../../../openapi.yaml#/components/responses/ErrorGameNotFound'
