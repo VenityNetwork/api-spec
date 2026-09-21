@@ -30,6 +30,11 @@ properties:
     example: 7619001
   rankName:
     $ref: '../../../openapi.yaml#/components/schemas/PlayerRank'
+  mvpPlusColor:
+    type: string
+    nullable: true
+    description: Effective color of the first plus symbol for MVP+ and MVP++; null for other ranks
+    example: 'Red'
   guild:
     $ref: '../../../openapi.yaml#/components/schemas/PlayerGuildInfo'
   rankExpiresAt:
@@ -49,4 +54,3 @@ properties:
     format: date-time
   online:
     $ref: '../../../openapi.yaml#/components/schemas/PlayerOnlineInfo'
-
