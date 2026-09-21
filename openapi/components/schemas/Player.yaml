@@ -35,6 +35,11 @@ properties:
     nullable: true
     description: Effective color of the first plus symbol for MVP+ and MVP++; null for other ranks
     example: 'Red'
+  mvpPlusSecondColor:
+    type: string
+    nullable: true
+    description: Effective color of the second plus symbol for MVP++; null for other ranks
+    example: 'Red'
   guild:
     $ref: '../../../openapi.yaml#/components/schemas/PlayerGuildInfo'
   rankExpiresAt:
